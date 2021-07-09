@@ -1,6 +1,6 @@
 {
   "name": "@MaxiCashier/currency-settings",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -8,13 +8,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/MaxiCashier/currency-settings.git"
+    "url": "git://github.com/MaxiCashier/currency-settings.git"
   },
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/MaxiCashier/currency-settings/issues"
-  },
   "publishConfig": {
     "@MaxiCashier:registry": "https://npm.pkg.github.com"
   },
