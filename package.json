@@ -1,5 +1,5 @@
 {
-  "name": "currency-settings",
+  "name": "@MaxiCashier/currency-settings",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
