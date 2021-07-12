@@ -2,7 +2,6 @@ import currencySettings from './currencies'
 
 const formatMoney = (amount, currency, toCents = false) => {
   if (!amount || !currency) {
-    console.error('Amount or currency wasn\'t provided to money formatter')
 
     return null
   }
