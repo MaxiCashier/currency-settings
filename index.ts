@@ -7,7 +7,7 @@ import currencySettings from './currencies'
  *
  * @returns {?string}
  */
-export const formatMoney = (amount, currency, toCents = false) => {
+const formatMoney = (amount: number, currency: string, toCents: boolean = false) => {
   if (!amount || !currency) {
     console.error('Amount or currency wasn\'t provided to money formatter')
 
@@ -21,3 +21,5 @@ export const formatMoney = (amount, currency, toCents = false) => {
     ? Number((~~amount * decimalPlacesFactor).toFixed(0))
     : Number(~~amount / decimalPlacesFactor)
 }
+
+export default formatMoney
