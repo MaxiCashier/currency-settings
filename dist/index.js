@@ -23,7 +23,7 @@ var formatMoney = function formatMoney(amount, currency) {
   }
 
   var decimalPlacesFactor = Math.pow(10, currentCurrencySettings.minorUnit);
-  return toCents ? Number((~~amount * decimalPlacesFactor).toFixed(0)) : Number(~~amount / decimalPlacesFactor);
+  return toCents ? Number((Math.ceil(amount) * decimalPlacesFactor).toFixed(0)) : Number(Math.ceil(amount) / decimalPlacesFactor);
 };
 
 var _default = formatMoney;
