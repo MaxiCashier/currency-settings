@@ -17,11 +17,13 @@ describe('Money Formatter', () => {
 
   it('should correctly format money from cents ', () => {
     expect(formatMoney(1111, WITH_TWO_MINOR)).toEqual(11.11)
+    expect(formatMoney(11110000000, WITH_TWO_MINOR)).toEqual(111100000.00)
     expect(formatMoney(1111, WITHOUT_MINOR)).toEqual(1111)
   })
 
   it('should correctly format money to cents ', () => {
     expect(formatMoney(1111, WITH_TWO_MINOR, true)).toEqual(111100)
+    expect(formatMoney(11110000000, WITH_TWO_MINOR, true)).toEqual(1111000000000)
     expect(formatMoney(1111, WITHOUT_MINOR, true)).toEqual(1111)
   })
 })

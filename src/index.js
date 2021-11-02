@@ -15,8 +15,8 @@ const formatMoney = (amount, currency, toCents = false) => {
   const decimalPlacesFactor = 10 ** currentCurrencySettings.minorUnit
 
   return toCents
-    ? Number((~~amount * decimalPlacesFactor).toFixed(0))
-    : Number(~~amount / decimalPlacesFactor)
+    ? Number((Math.ceil(amount) * decimalPlacesFactor).toFixed(0))
+    : Number(Math.ceil(amount) / decimalPlacesFactor)
 }
 
 export default formatMoney
