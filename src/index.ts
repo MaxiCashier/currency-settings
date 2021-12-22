@@ -1,6 +1,6 @@
 import currencies from './currencies'
 
-const formatMoney = (amount: number, currency: keyof typeof currencies, toCents = false) => {
+const formatMoney = (amount: number, currency: string, toCents = false) => {
   if (!amount || !currency) {
 
     return null
@@ -19,7 +19,7 @@ const formatMoney = (amount: number, currency: keyof typeof currencies, toCents 
     : Number(Math.ceil(amount) / decimalPlacesFactor)
 }
 
-export const formatMoneyToString = (amount: number, currency: keyof typeof currencies) => {
+export const formatMoneyToString = (amount: number, currency: string) => {
   const numberMoney = formatMoney(amount, currency)
 
   if (!numberMoney) return null
